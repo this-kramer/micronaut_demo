@@ -2,19 +2,19 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "de.upb.cs.crypto";
-option java_outer_classname = "Micronaut_demo";
+option java_outer_classname = "MicronautDemo";
 option objc_class_prefix = "HLW";
 
 package de.upb.cs.crypto;
 
-service Micronaut_demoService {
-  rpc send (Micronaut_demoRequest) returns (Micronaut_demoReply) {}
+service MicronautDemoService {
+  rpc send (MicronautDemoRequest) returns (MicronautDemoReply) {}
 }
 
-message Micronaut_demoRequest {
+message MicronautDemoRequest {
   string name = 1;
 }
 
-message Micronaut_demoReply {
+message MicronautDemoReply {
   string message = 1;
 }
